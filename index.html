@@ -6,41 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash registeration-Website</title>
     <link href="styles.css" rel="stylesheet">
+    
 </head>
 <body>
-    <div calss="container">
+   <div class="container">
+    
     <div class="heading-section">
     <h1>Cash Register Manager</h1>
 
     <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
 
 </div>
-
-    <label for="amount-for">Bill:</label><br>
-    <input id="amount-for"/><br>
+  
+    <label for="amount-for">Bill Amount:</label><br>
+    <input id="amount-for" type="text"/><br>
     <label for="amount-given">Cash Given:</label><br>
-    <input id="amount-given"/><br>
-    <button>Check</button>
+    <input id="amount-given" type="text"/><br>
+    <button id="check-button">Check</button>
+    <p id="error-message"></p>
  
 
     <table>
-        <caption>Return Value :</caption>
+        <caption Id="caption">Return Value :</caption>
         <tr>
           <td><h3>No. Of Notes</h3></td>
-            
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          
         </tr>
         <tr>
             <td><h3>Note</h3></td>
-            <td>1</td>
-            <td>5</td>
-            <td>10</td>
-            <td>20</td>
-          
-            <td>100</td>
-            <td>500</td>
             <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>1</td>
+           
         </tr>
     </table>
 </div>
+<script src="apps.js"></script>
 </body>
 </html>
